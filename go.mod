@@ -10,6 +10,3 @@ require (
 	github.com/agilira/go-errors v1.1.0 // indirect
 	github.com/agilira/go-timecache v1.0.1 // indirect
 )
-
-// TODO: Remove when iris v1.1.0 is released with SyncReader interface
-// replace github.com/agilira/iris => ../iris

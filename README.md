@@ -2,9 +2,6 @@
 ### an AGILira library
 
 [![CI/CD](https://github.com/agilira/iris-provider-slog/workflows/CI%2FCD/badge.svg)](https://github.com/agilira/iris-provider-slog/actions/workflows/ci.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/agilira/iris-provider-slog)](https://goreportcard.com/report/github.com/agilira/iris-provider-slog)
-[![Go Version](https://img.shields.io/badge/Go-1.24.5-00ADD8?logo=go)](https://golang.org/dl/)
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 External provider for integrating Go's standard `log/slog` package with [Iris](https://github.com/agilira/iris) logging framework.
 
