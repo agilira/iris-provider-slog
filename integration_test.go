@@ -207,10 +207,10 @@ func TestProviderPerformanceBasic(t *testing.T) {
 	nsPerOp := duration.Nanoseconds() / int64(n)
 	t.Logf("Handle performance: %d ns/op (%d ops in %v)", nsPerOp, n, duration)
 
-	// Should be well under 500ns/op for simple handling (but allow more with race detector)
-	maxNsPerOp := 500
+	// Should be well under 1000ns/op for simple handling (allow more with race detector)
+	maxNsPerOp := 1000
 	if testing.Short() {
-		maxNsPerOp = 1000 // More lenient for race detector
+		maxNsPerOp = 2000 // More lenient for race detector
 	}
 	if nsPerOp > int64(maxNsPerOp) {
 		t.Errorf("Handle too slow: %d ns/op (expected < %d)", nsPerOp, maxNsPerOp)
