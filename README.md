@@ -1,14 +1,17 @@
-# Iris Provider: slog
+# Iris Provider for Slog
 ### an AGILira library
 
 [![CI/CD](https://github.com/agilira/iris-provider-slog/workflows/CI%2FCD/badge.svg)](https://github.com/agilira/iris-provider-slog/actions/workflows/ci.yml)
+[![Security](https://img.shields.io/badge/security-gosec-brightgreen.svg)](https://github.com/agilira/iris-provider-slog/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/agilira/iris-provider-slog)](https://goreportcard.com/report/github.com/agilira/iris-provider-slog)
+[![Made For Iris](https://img.shields.io/badge/Made_for-Iris-pink)](https://github.com/agilira/iris)
 
 External provider for integrating Go's standard `log/slog` package with [Iris](https://github.com/agilira/iris) logging framework.
 
 ## Features
 
 - **Zero Code Changes**: Use existing slog code unchanged
-- **10x Performance**: Benefit from Iris's 31ns/op logging performance  
+- **Performance**: Benefit from Iris's 31ns/op logging performance  
 - **Feature Inheritance**: Automatic OpenTelemetry, writers, security features
 - **Drop-in Replacement**: Simply replace slog.Handler with Iris provider
 
